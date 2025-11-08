@@ -53,7 +53,7 @@ ssh bandit2@bandit.labs.overthewire.org -p 2220
 - The name of the file is ‘spaces in this filename’. When you try to cat out the filename as is, since there are spaces in the name of the file, the command assumes each word separated by space to be a separate file.
 - du - estimate file space usage.
 
--  ##level-4
+ ##level-4
 - username - bandit4
 - password
    ```
@@ -73,12 +73,12 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
    4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
    ```
 #commands:
--ls -la
--cd inhere/
--ls
--file ./*
--cat ./-file07
--ssh bandit5@localhost
+- ls -la
+- cd inhere/
+- ls
+- file ./*
+- cat ./-file07
+- ssh bandit5@localhost
 
 - - connect -
 ```
@@ -92,12 +92,12 @@ ssh bandit5@bandit.labs.overthewire.org -p 2220
    HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
    ```
 #Commands: Type one by one
--ls
--cd inhere/
--ls
--find . -size 1033c
--cat ./maybehere07/.file2
--ssh bandit6@localhost
+- ls
+- cd inhere/
+- ls
+- find . -size 1033c
+- cat ./maybehere07/.file2
+- ssh bandit6@localhost
 
 - - connect -
 ```
