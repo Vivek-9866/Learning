@@ -142,9 +142,8 @@ ssh bandit8@bandit.labs.overthewire.org -p 2220
    4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
    ```
 #Commands:
-- A pipe is a form of redirection that is used in Linux.
--  The wc (i.e., word count) command by default counts the number of lines, words and characters in text.
--  </home/kali/Pictures/Screenshot_2025-11-09_18_25_04.png>
+- cat data.txt | sort | uniq -u
+- ssh bandit9@localhost
 - - connect -
 ```
 ssh bandit9@bandit.labs.overthewire.org -p 2220
@@ -153,11 +152,12 @@ ssh bandit9@bandit.labs.overthewire.org -p 2220
 - username - bandit10
 - password
    ```
-   
+   FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
    ```
 #Commands:
-- The name of the file is ‘spaces in this filename’. When you try to cat out the filename as is, since there are spaces in the name of the file, the command assumes each word separated by space to be a separate file.
-- du - estimate file space usage.
+- - ls
+- strings data.txt | grep ==
+- ssh bandit10@localhost
 - - connect -
 ```
 ssh bandit10@bandit.labs.overthewire.org -p 2220
@@ -166,11 +166,12 @@ ssh bandit10@bandit.labs.overthewire.org -p 2220
 - username - bandit8
 - password
    ```
-   
+   dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
    ```
 #Commands:
-- The name of the file is ‘spaces in this filename’. When you try to cat out the filename as is, since there are spaces in the name of the file, the command assumes each word separated by space to be a separate file.
-- du - estimate file space usage.
+-ls
+- cat data.txt | base64 --decode
+- ssh bandit11@localhost
 - - connect -
 ```
 ssh bandit11@bandit.labs.overthewire.org -p 2220
@@ -179,11 +180,13 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 - username - bandit12
 - password
    ```
-   
+   7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
    ```
 #Commands:
-- The name of the file is ‘spaces in this filename’. When you try to cat out the filename as is, since there are spaces in the name of the file, the command assumes each word separated by space to be a separate file.
-- du - estimate file space usage.
+- ls
+- cat data.txt | tr a-zA-Z n-za-mN-ZA-M
+- ssh bandit12@localhost
 - - connect -
 ```
 ssh bandit12@bandit.labs.overthewire.org -p 2220
@@ -195,10 +198,115 @@ ssh bandit12@bandit.labs.overthewire.org -p 2220
    
    ```
 #Commands:
-- The name of the file is ‘spaces in this filename’. When you try to cat out the filename as is, since there are spaces in the name of the file, the command assumes each word separated by space to be a separate file.
-- du - estimate file space usage.
+- 
 - - connect -
 ```
 ssh bandit13@bandit.labs.overthewire.org -p 2220
 ```
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+
 
