@@ -3,14 +3,14 @@
 -"Try to solve the level on your own. It is the only true way to learn. Use the lesson learnt section for each level to understand the command that would be useful to complete that level. If you are still stuck, go through the walk-through for the level".
 
 
- ##level-0
+-  ##level-0
 - username - bandit0
 - password - bandit0
 - connect -
 ```
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
- ##level-1
+- ##level-1
 - username - bandit1
 - password 
 ```
@@ -28,13 +28,13 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 - <img width="1447" height="305" alt="image" src="https://github.com/user-attachments/assets/6e661437-b4ce-4077-a39c-b47a54a16ca9" />
 
 
- ##level-2
+ - ##level-2
 - username - bandit2
 - password -
  ```
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ```
-#Commands:
+- #Commands:
 - the file name is- ‘ -’.
 - "."=type in './-'
 
