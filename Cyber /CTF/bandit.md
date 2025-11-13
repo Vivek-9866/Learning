@@ -2,21 +2,20 @@
 # Recommendation:
 -"Try to solve the level on your own. It is the only true way to learn. Use the lesson learnt section for each level to understand the command that would be useful to complete that level. If you are still stuck, go through the walk-through for the level".
 
-
--  ##level-0
+ ## level-0
 - username - bandit0
 - password - bandit0
 - connect -
 ```
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
-- ##level-1
+ ## level-1
 - username - bandit1
 - password 
 ```
 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ```
-#Commands:
+## Commands:
 - ls- check the how many Files are there.
 - Cat-To read the content of the file type.
 - Find- it tell the what are there in that.
@@ -28,13 +27,13 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 - <img width="1447" height="305" alt="image" src="https://github.com/user-attachments/assets/6e661437-b4ce-4077-a39c-b47a54a16ca9" />
 
 
- - ##level-2
+  ## level-2
 - username - bandit2
 - password -
  ```
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ```
-- #Commands:
+ ## Commands:
 - the file name is- ‘ -’.
 - "."=type in './-'
 
@@ -43,17 +42,17 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ssh bandit2@bandit.labs.overthewire.org -p 2220
 ```
 
- ##level-3
+ ## level-3
 - username - bandit3
 - password
    ```
    MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
    ```
-#Commands:
+## Commands:
 - The name of the file is ‘spaces in this filename’. When you try to cat out the filename as is, since there are spaces in the name of the file, the command assumes each word separated by space to be a separate file.
 - du - estimate file space usage.
 
- ##level-4
+ ## level-4
 - username - bandit4
 - password
    ```
@@ -72,7 +71,7 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
    ```
    4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
    ```
-#commands:
+## commands:
 - ls -la
 - cd inhere/
 - ls
@@ -84,13 +83,13 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
 ```
 ssh bandit5@bandit.labs.overthewire.org -p 2220
 ```
- ##level-6
+ ## level-6
 - username - bandit6
 - password
    ```
    HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
    ```
-#Commands: Type one by one
+## Commands: Type one by one
 - ls
 - cd inhere/
 - ls
@@ -103,13 +102,13 @@ ssh bandit5@bandit.labs.overthewire.org -p 2220
 ssh bandit6@bandit.labs.overthewire.org -p 2220
 ```
 
- ##level-7
+ ## level-7
 - username - bandit7
 - password
    ```
    morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
    ```
-#Commands:
+## Commands:
 - find / -user bandit7 -group bandit6 -size 33c
 - cat /var/lib/dpkg/info/bandit7.password
 - ssh bandit7@localhost
@@ -117,13 +116,13 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 ```
 ssh bandit7@bandit.labs.overthewire.org -p 2220
 ```
- ##level-8
+ ## level-8
 - username - bandit8
 - password
    ```
    dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
    ```
-#Commands:
+## Commands:
 -  man - an interface to the system reference manuals
 -  ls
 - cat data.txt | grep millionth
@@ -133,26 +132,26 @@ ssh bandit7@bandit.labs.overthewire.org -p 2220
 ssh bandit8@bandit.labs.overthewire.org -p 2220
 ```
 
-  ##level-9
+  ## level-9
 - username - bandit9
 - password
    ```
    4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
    ```
-#Commands:
+## Commands:
 - cat data.txt | sort | uniq -u
 - ssh bandit9@localhost
 - - connect -
 ```
 ssh bandit9@bandit.labs.overthewire.org -p 2220
 ```
-  ##level-10
+  ## level-10
 - username - bandit10
 - password
    ```
    FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
    ```
-#Commands:
+## Commands:
 - - ls
 - strings data.txt | grep ==
 - ssh bandit10@localhost
@@ -160,13 +159,13 @@ ssh bandit9@bandit.labs.overthewire.org -p 2220
 ```
 ssh bandit10@bandit.labs.overthewire.org -p 2220
 ```
-  ##level-11
+  ## level-11
 - username - bandit8
 - password
    ```
    dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
    ```
-#Commands:
+## Commands:
 -ls
 - cat data.txt | base64 --decode
 - ssh bandit11@localhost
@@ -174,14 +173,14 @@ ssh bandit10@bandit.labs.overthewire.org -p 2220
 ```
 ssh bandit11@bandit.labs.overthewire.org -p 2220
 ```
-  ##level-12
+  ## level-12
 - username - bandit12
 - password
    ```
    7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 
    ```
-#Commands:
+## Commands:
 - ls
 - cat data.txt | tr a-zA-Z n-za-mN-ZA-M
 - ssh bandit12@localhost
@@ -189,13 +188,13 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 ```
 ssh bandit12@bandit.labs.overthewire.org -p 2220
 ```
-  ##level-13
+  ## level-13
 - username - bandit13
 - password
    ```
    FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
    ```
-#Commands:
+## Commands:
 - ls
 - cd /tmp/inigo12
 - ls
@@ -210,13 +209,13 @@ ssh bandit12@bandit.labs.overthewire.org -p 2220
 ssh bandit13@bandit.labs.overthewire.org -p 2220
 ```
 
--  ##level-14
+-  ## level-14
 - username - bandit14
 - password
    ```
    
    ```
-#Commands:
+## Commands:
 - 
 - - connect -
 ```
