@@ -222,18 +222,18 @@ ssh bandit13@bandit.labs.overthewire.org -p 2220
 ssh bandit14@bandit.labs.overthewire.org -p 2220
 ```
 
--  ##level-1
-- username - bandit1
+-  ##level-15
+- username - bandit15
 - password
    ```
-   
+   8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
    ```
-#Commands:
-- 
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit15@bandit.labs.overthewire.org -p 2220
 ```
+<img width="551" height="168" alt="image" src="https://github.com/user-attachments/assets/16b2d6a2-b21d-49ef-8ed2-b2fac3f4fb37" />
+
 
 -  ##level-1
 - username - bandit1
