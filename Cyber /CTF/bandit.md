@@ -13,28 +13,44 @@ Search → Read → Think → Crack → Next
 
 ## Commands "::"
   # command               # Used                                # where we use                                                #why we use.....
-   1.mkdir                 .creating new folder                   . projects/storing files                                      . to organise files
-   2.rmdir                   delete directory                     . ex: rm file.txt                                             .removing unwanted folders
-   3.touch                   create file                            ex: touch notes.txt                                          .create empty file
-   4.chmod                  Change permissions                    .Real use 1.Scripts,Secure password files                      .Control who can read/write/execute
-                                                                    ex:chmod 777 file.txt
-   5.cp                       copy file                               ex:cp file.txt /home/user/                                    .backup or dupilcate
+   1.mkdir                 .- creating new folder                   .- projects/storing files                                      .- to organise files
 
-   6.mv file.txt folder/      .move/cut file                         ex:mv old.txt new.txt                                          .Move OR rename
+   
+   2.rmdir                  .- delete directory                     . - ex: rm file.txt                                            .- removing unwanted folders
 
-   7.cp -r folder1 folder2     .copy directory                        ex:cp -r folder1 folder2                                      .copy entire folder with files
+   
+   3.touch                   - create file                            - ex: touch notes.txt                                          .- create empty file
 
-   8. mv folder1 /home/user/    .move directory                         -----------                                                   . same as files
-   9. "*"                        .Select all files                   ex:rm * ,cp * backup/                                            . Wildcard → select everything
-   10. find                       . Find required file               ex: find / -name password.txt                                 . Search hidden or specific files
-   11.grep "password" file.txt                                      .search inside files
+   
+   4.chmod                  - Change permissions                    .- Real use 1.Scripts,Secure password files                      .- Control who can read/write/execute
+   
+                                                                    .-ex:chmod 777 file.txt
+                                                                    
+   5.cp                       - copy file                               - ex:cp file.txt /home/user/                                    .- backup or dupilcate
+   
 
-   12. nano file.txt                .Edit suing Nano                    -----------                                              . Edit text easily inside terminal
+   6.mv file.txt folder/      .- move/cut file                         -ex:mv old.txt new.txt                                          .- Move OR rename
+   
+
+   7.cp -r folder1 folder2     .- copy directory                        - ex:cp -r folder1 folder2                                      .-  copy entire folder with files
+
+   8. mv folder1 /home/user/    .-move directory                         -----------                                                   . - same as files
+   
+   9. "*"                        .- Select all files                   - ex:rm * ,cp * backup/                                            . - Wildcard → select everything
+
+   
+   10. find                       . - Find required file               - ex: find / -name password.txt                                 . - Search hidden or specific files
+
+   
+   11.grep "password" file.txt     --------                               .- search inside files
+   
+
+   12. nano file.txt                .- Edit suing Nano                    -----------                                              .- Edit text easily inside terminal
 
 # Here some important keys:
-CTRL + O → save
-CTRL + X → exit
-CTRL + K → cut line
+CTRL + O → save ,
+CTRL + X → exit ,
+CTRL + K → cut line.
 
    ## Now we can start  doing Levels.... Be carefull doing the levels....chill Bro $$      
 
