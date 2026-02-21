@@ -24,7 +24,6 @@ Search → Read → Think → Crack → Next
    
    4.chmod                  - Change permissions                    .- Real use 1.Scripts,Secure password files                      .- Control who can read/write/execute
    
-                                                                    .-ex:chmod 777 file.txt
                                                                     
    5.cp                       - copy file                               - ex:cp file.txt /home/user/                                    .- backup or dupilcate
    
@@ -32,25 +31,34 @@ Search → Read → Think → Crack → Next
    6.mv file.txt folder/      .- move/cut file                         -ex:mv old.txt new.txt                                          .- Move OR rename
    
 
-   7.cp -r folder1 folder2     .- copy directory                        - ex:cp -r folder1 folder2                                      .-  copy entire folder with files
+   7.cp -r folder1 folder2     .- copy directory                        - ex:cp -r folder1 folder2                                 .-  copy entire folder with files
 
    8. mv folder1 /home/user/    .-move directory                         -----------                                                   . - same as files
    
-   9. "*"                        .- Select all files                   - ex:rm * ,cp * backup/                                            . - Wildcard → select everything
+   9. "*"                        .- Select all files                   - ex:rm * ,cp * backup/                                   . - Wildcard → select everything
 
    
-   10. find                       . - Find required file               - ex: find / -name password.txt                                 . - Search hidden or specific files
+   10. find                       . - Find required file               - ex: find / -name password.txt                           . - Search hidden or specific files
 
    
    11.grep "password" file.txt     --------                               .- search inside files
    
 
-   12. nano file.txt                .- Edit suing Nano                    -----------                                              .- Edit text easily inside terminal
+   12. nano file.txt                .- Edit suing Nano                    -----------                                           .- Edit text easily inside terminal
 
 # Here some important keys:
-CTRL + O → save ,
-CTRL + X → exit ,
+CTRL + O → save ,----
+CTRL + X → exit ,----
 CTRL + K → cut line.
+
+# Here some basic commands
+pwd                → Show current directory
+-ls                 → List files
+ls -l              → Detailed list
+ls -a              → Show hidden files
+cd folder          → Enter folder
+cd ..              → Go back one directory
+cd ~               → Go to home directory
 
    ## Now we can start  doing Levels.... Be carefull doing the levels....chill Bro $$      
 
