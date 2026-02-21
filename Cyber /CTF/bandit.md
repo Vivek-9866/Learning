@@ -34,26 +34,14 @@ Search → Read → Think → Crack → Next
 
  - 7.cp -r folder1 folder2     .- copy directory                        - ex:cp -r folder1 folder2                                 .-  copy entire folder with files
 
-   - 8. mv folder1 /home/user/    .-move directory                         -----------                                                   . - same as files
-   
-    - 9. "*"                        .- Select all files                   - ex:rm * ,cp * backup/                                   . - Wildcard → select everything
-
-   
-  - 10. find                       . - Find required file               - ex: find / -name password.txt                           . - Search hidden or specific files
-
-   
-   - 11.grep "password" file.txt     --------                               .- search inside files
-   
-
-   - 12. nano file.txt                .- Edit suing Nano                    -----------                                           .- Edit text easily inside terminal
-
-# Here some important keys:
+  
+##Here some important keys:
 - CTRL + O → save
 - CTRL + X → exit
 - CTRL + K → cut line.
 
-## Here some basic commands
-# Navigation:
+# Here some basic commands
+## Navigation:
 - pwd                → Show current directory
 - ls                 → List files
 - ls -l              → Detailed list
@@ -61,7 +49,7 @@ Search → Read → Think → Crack → Next
 - cd folder          → Enter folder
 - cd ..              → Go back one directory
 - cd ~               → Go to home directory
-- # File & Folder Management:
+- ## File & Folder Management:
 - mkdir folder       → Create folder
 - rmdir folder       → Remove empty folder
 - rm file            → Delete file
@@ -69,25 +57,26 @@ Search → Read → Think → Crack → Next
 - cp file1 file2     → Copy file
 - mv file1 file2     → Move/rename file
 - touch file         → Create empty file
-- # File Viewing:
+- ## File Viewing:
 - cat file           → Show file content
 - less file          → View large file
 - head file          → First 10 lines
 - tail file          → Last 10 lines
 - tail -f file       → Live log view
-- # Permissions:
+- ## Permissions:
 - whoami             → Current user
 - chmod 755 file     → Change permission
 - chown user file    → Change owner
 - sudo command       → Run as admin
-- # Search:
+- ## Search:
 - find / -name file          → Find file
 - grep "text" file           → Search inside file
 - grep -r "text" folder      → Search in folder
+-  "*"                        .- Select all files   
 
 - ip a               → Show IP address
 - ping google.com    → Check internet
-- # Terminal Shortcuts:
+- ## Terminal Shortcuts:
 - Ctrl + C     → Stop command
 - Ctrl + Z     → Pause command
 - Ctrl + L     → Clear screen
@@ -98,7 +87,7 @@ Search → Read → Think → Crack → Next
    ## Now we can start  doing Levels.... Be carefull bro doing the levels....chill Bro $$      
 
                         
-
+## start one by one
 
  ## level-0
 - username - bandit0
