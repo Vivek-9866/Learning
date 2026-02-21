@@ -35,7 +35,7 @@ Search → Read → Think → Crack → Next
  - 7.cp -r folder1 folder2     .- copy directory                        - ex:cp -r folder1 folder2                                 .-  copy entire folder with files
 
   
-##Here some important keys:
+## Here some important keys:
 - CTRL + O → save
 - CTRL + X → exit
 - CTRL + K → cut line.
@@ -106,6 +106,12 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 - ls- check the how many Files are there.
 - Cat-To read the content of the file type.
 - Find- it tell the what are there in that.
+- du-disk usage: du shows the actual disk space allocated on disk (in blocks), not just the file size.
+- readme → maybe 16 KB (4 blocks)
+- directory → maybe 4 KB
+- Total ≈ 20 KB
+- ## Linux does not store files byte by byte on disk. It stores data in blocks.
+- ## 1 block = 4 KB
 
 - connect -
  ```
