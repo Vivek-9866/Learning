@@ -130,6 +130,13 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 - the file name is- ‘ -’.
 - "."=type in './-'
 
+- In Linux, the command ./ is used to run a program (script or executable file) from the current directory.
+- 🔹 What does ./ mean?
+-  → represents the current directory
+-  / → separates directories
+-  So ./filename means:
+-  👉 “Run the file named filename that is located in the current directory.”
+
 - connect -
 ```
 ssh bandit2@bandit.labs.overthewire.org -p 2220
@@ -137,13 +144,27 @@ ssh bandit2@bandit.labs.overthewire.org -p 2220
 
  ## level-3
 - username - bandit3
+- How it come:
+- bandit2@bandit:~$ ls
+- --spaces in this filename--
+- bandit2@bandit:~$ cat -- --spaces\ in\ this\ filename--
+- MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 - password
    ```
    MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
    ```
+
+ - connect -
+```
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+```
 ## Commands:
 - The name of the file is ‘spaces in this filename’. When you try to cat out the filename as is, since there are spaces in the name of the file, the command assumes each word separated by space to be a separate file.
-- du - estimate file space usage.
+- ## why we use "--" this one for cat command,
+- because.. cat -- --spaces\ in\ this\ filename--
+- means:
+- First -- → tells cat to stop parsing options
+- Second part → actual filename
 
  ## level-4
 - username - bandit4
