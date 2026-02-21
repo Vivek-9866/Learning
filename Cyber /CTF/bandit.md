@@ -12,55 +12,90 @@ Each level:
 Search → Read → Think → Crack → Next
 
 ## Commands "::"
-  # command               # Used                                # where we use                                                #why we use.....
-   1.mkdir                 .- creating new folder                   .- projects/storing files                                      .- to organise files
+  - # command               # Used                                # where we use                                                #why we use.....
+  
+   - 1.mkdir                 .- creating new folder                   .- projects/storing files                                      .- to organise files
 
    
-   2.rmdir                  .- delete directory                     . - ex: rm file.txt                                            .- removing unwanted folders
+   - 2.rmdir                  .- delete directory                     . - ex: rm file.txt                                            .- removing unwanted folders
 
    
-   3.touch                   - create file                            - ex: touch notes.txt                                          .- create empty file
+   - 3.touch                   - create file                            - ex: touch notes.txt                                          .- create empty file
 
    
-   4.chmod                  - Change permissions                    .- Real use 1.Scripts,Secure password files                      .- Control who can read/write/execute
+   - 4.chmod                  - Change permissions                    .- Real use 1.Scripts,Secure password files                      .- Control who can   read/write/execute
    
                                                                     
-   5.cp                       - copy file                               - ex:cp file.txt /home/user/                                    .- backup or dupilcate
+   - 5.cp                       - copy file                               - ex:cp file.txt /home/user/                                    .- backup or dupilcate
    
 
-   6.mv file.txt folder/      .- move/cut file                         -ex:mv old.txt new.txt                                          .- Move OR rename
+   - 6.mv file.txt folder/      .- move/cut file                         -ex:mv old.txt new.txt                                          .- Move OR rename
    
 
-   7.cp -r folder1 folder2     .- copy directory                        - ex:cp -r folder1 folder2                                 .-  copy entire folder with files
+ - 7.cp -r folder1 folder2     .- copy directory                        - ex:cp -r folder1 folder2                                 .-  copy entire folder with files
 
-   8. mv folder1 /home/user/    .-move directory                         -----------                                                   . - same as files
+   - 8. mv folder1 /home/user/    .-move directory                         -----------                                                   . - same as files
    
-   9. "*"                        .- Select all files                   - ex:rm * ,cp * backup/                                   . - Wildcard → select everything
-
-   
-   10. find                       . - Find required file               - ex: find / -name password.txt                           . - Search hidden or specific files
+    - 9. "*"                        .- Select all files                   - ex:rm * ,cp * backup/                                   . - Wildcard → select everything
 
    
-   11.grep "password" file.txt     --------                               .- search inside files
+  - 10. find                       . - Find required file               - ex: find / -name password.txt                           . - Search hidden or specific files
+
+   
+   - 11.grep "password" file.txt     --------                               .- search inside files
    
 
-   12. nano file.txt                .- Edit suing Nano                    -----------                                           .- Edit text easily inside terminal
+   - 12. nano file.txt                .- Edit suing Nano                    -----------                                           .- Edit text easily inside terminal
 
 # Here some important keys:
-CTRL + O → save ,----
-CTRL + X → exit ,----
-CTRL + K → cut line.
+- CTRL + O → save
+- CTRL + X → exit
+- CTRL + K → cut line.
 
-# Here some basic commands
-pwd                → Show current directory
--ls                 → List files
-ls -l              → Detailed list
-ls -a              → Show hidden files
-cd folder          → Enter folder
-cd ..              → Go back one directory
-cd ~               → Go to home directory
+## Here some basic commands
+# Navigation:
+- pwd                → Show current directory
+- ls                 → List files
+- ls -l              → Detailed list
+- ls -a              → Show hidden files
+- cd folder          → Enter folder
+- cd ..              → Go back one directory
+- cd ~               → Go to home directory
+- # File & Folder Management:
+- mkdir folder       → Create folder
+- rmdir folder       → Remove empty folder
+- rm file            → Delete file
+- rm -r folder       → Delete folder
+- cp file1 file2     → Copy file
+- mv file1 file2     → Move/rename file
+- touch file         → Create empty file
+- # File Viewing:
+- cat file           → Show file content
+- less file          → View large file
+- head file          → First 10 lines
+- tail file          → Last 10 lines
+- tail -f file       → Live log view
+- # Permissions:
+- whoami             → Current user
+- chmod 755 file     → Change permission
+- chown user file    → Change owner
+- sudo command       → Run as admin
+- # Search:
+- find / -name file          → Find file
+- grep "text" file           → Search inside file
+- grep -r "text" folder      → Search in folder
 
-   ## Now we can start  doing Levels.... Be carefull doing the levels....chill Bro $$      
+- ip a               → Show IP address
+- ping google.com    → Check internet
+- # Terminal Shortcuts:
+- Ctrl + C     → Stop command
+- Ctrl + Z     → Pause command
+- Ctrl + L     → Clear screen
+- Tab          → Auto-complete
+- history      → Command history
+
+
+   ## Now we can start  doing Levels.... Be carefull bro doing the levels....chill Bro $$      
 
                         
 
