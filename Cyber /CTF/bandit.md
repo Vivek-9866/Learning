@@ -223,9 +223,22 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
    morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
    ```
 ## Commands:
-- find / -user bandit7 -group bandit6 -size 33c
+- find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 - cat /var/lib/dpkg/info/bandit7.password
 - ssh bandit7@localhost
+
+- 2>/dev/null
+
+- This is about error handling.
+
+- 2 → refers to stderr (error output)
+
+- > → redirect
+
+- /dev/null → a special file that discards everything
+
+- When searching from /, you’ll hit directories you don’t have permission to read.
+- Without this part, your screen would fill with errors like:
 - - connect -
 ```
 ssh bandit7@bandit.labs.overthewire.org -p 2220
@@ -240,6 +253,13 @@ ssh bandit7@bandit.labs.overthewire.org -p 2220
 -  man - an interface to the system reference manuals
 -  ls
 - cat data.txt | grep millionth
+- (((grep millionth
+- "grep" searches for text patterns inside input.
+- millionth is the word we’re searching for.
+-  The "|" symbol is called a pipe.
+-  It sends the output of the first command as input to the second command.)))
+
+  
 - ssh bandit8@localhost
 - - connect -
 ```
@@ -254,6 +274,11 @@ ssh bandit8@bandit.labs.overthewire.org -p 2220
    ```
 ## Commands:
 - cat data.txt | sort | uniq -u
+
+- ((( Line 1: sort data.txt arranges all lines in alphabetical order so identical lines are grouped together.
+- Line 2: uniq -u then prints only the lines that appear exactly once (removes duplicates and keeps unique entries only).)))
+
+
 - ssh bandit9@localhost
 - - connect -
 ```
@@ -267,21 +292,31 @@ ssh bandit9@bandit.labs.overthewire.org -p 2220
    ```
 ## Commands:
 - - ls
-- strings data.txt | grep ==
+- strings data.txt | grep =
+
+- ((( strings data.txt extracts readable text from a file (useful if it contains binary or mixed content).
+- grep = filters that output to show only lines containing the = character.)))
+
+  
 - ssh bandit10@localhost
 - - connect -
 ```
 ssh bandit10@bandit.labs.overthewire.org -p 2220
 ```
   ## level-11
-- username - bandit8
+- username - bandit8 
 - password
    ```
    dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
    ```
 ## Commands:
 -ls
-- cat data.txt | base64 --decode
+- cat data.txt | base64 -d
+
+- ((( cat data.txt prints the contents of the file, and the | pipe sends that output to the next command.
+- base64 -d decodes the Base64-encoded text back into its original readable form.)))
+
+  
 - ssh bandit11@localhost
 - - connect -
 ```
