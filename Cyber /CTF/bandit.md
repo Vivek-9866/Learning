@@ -331,12 +331,26 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
    ```
 ## Commands:
 - ls
-- cat data.txt | tr a-zA-Z n-za-mN-ZA-M
+- cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-Za-m]'
+- tr '[A-Za-z]' '[N-ZA-Mn-za-m]' uses the tr (translate) command to replace characters from one - set with another.
+
+- [A-Za-z] represents all uppercase (A–Z) and lowercase (a–z) letters.
+
+- [N-ZA-Mn-za-m] is the ROT13-mapped alphabet (A→N, B→O … N→A), so it shifts each letter by 13 - - positions, commonly used for simple text encoding/decoding.
 - ssh bandit12@localhost
 - - connect -
 ```
 ssh bandit12@bandit.labs.overthewire.org -p 2220
 ```
+  - ## OR:
+
+- And we can password in another way also like fist type :
+- ls
+- cat data.txt
+- after that comes like thiss = Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4
+- copy this one and open cyberchef.io after paste in that input space next in search bar   search in Rot13 then your password is shown in output...😉
+
+  
   ## level-13
 - username - bandit13
 - password
