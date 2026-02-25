@@ -358,15 +358,108 @@ ssh bandit12@bandit.labs.overthewire.org -p 2220
    FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
    ```
 ## Commands:
-- ls
-- cd /tmp/inigo12
-- ls
-- file data.txt
-- xxd -1 data.txt data1
-- cat data.txt
-- xxd -r data.txt > data01
-- ls
-- cat data09
+## commands with clear explanation::
+
+- You’re working on Level 12 → 13 of OverTheWire Bandit — this level is about repeatedly decoding and extracting compressed files hidden inside other files.
+
+- I’ll explain each command, what it does, why you used it, and where it’s used in real life — in very simple lines.
+
+- 1️⃣ ls
+
+- What it does: Lists files in the current folder.
+- Why here: To see what files are present.
+- Where used: Anytime you want to check folder contents.
+
+- 2️⃣ mkdir /tmp/jithu
+
+- What it does: Creates a new directory (folder).
+- Why here: /tmp is writable. Bandit home folders often have restrictions.
+- Where used: When you need a new workspace folder.
+
+- 3️⃣ cp data.txt /tmp/jithu
+
+- What it does: Copies a file.
+- Why here: To work safely on a copy of the original file.
+- Where used: Backup files before editing or testing.
+
+- 4️⃣ cd /tmp/jithu
+
+- What it does: Changes directory.
+- Why here: To move into your working folder.
+- Where used: Navigating between folders.
+
+- 5️⃣ file data.txt
+
+- What it does: Tells you the file type.
+- Why here: To check what kind of data is inside.
+- Where used: When you don’t know a file’s format.
+
+- 6️⃣ xxd -r data.txt > data
+
+- What it does:
+
+- xxd = hex dump tool
+
+-  -r = reverse (convert hex back to binary)
+
+- Why here: The file was hex-encoded. You converted it back to binary.
+- Where used: When dealing with encoded or raw binary data.
+
+- 7️⃣ mv data data2.gz
+
+- What it does: Renames or moves a file.
+- Why here: After checking file type, you rename it with correct extension (.gz).
+- Where used: Renaming files properly before extracting.
+
+- 8️⃣ gzip -d data2.gz
+
+- What it does: Decompresses gzip file.
+- Why here: File was gzip compressed.
+- Where used: Extract .gz files.
+
+- 9️⃣ bzip2 -d data3.bz
+
+- What it does: Decompresses bzip2 file.
+- Why here: File was bzip2 compressed.
+- Where used: Extract .bz2 files.
+
+- 🔟 tar -xf data5.tar
+
+- What it does: Extracts tar archive.
+-  -x = extract
+- -f = file
+- Why here: File was a tar archive.
+- Where used: Extract .tar files.
+
+- 1️⃣1️⃣ Repeating Pattern
+
+- You kept doing:
+
+- file → check type
+
+- mv → rename correctly
+- decompress (gzip -d or bzip2 -d)
+- if tar → tar -xf
+- Because the file was compressed multiple times inside each other.
+- This level teaches:
+
+- Always check file type before extracting.
+
+- 1️⃣2️⃣ cat data9
+
+- What it does: Displays file content.
+- Why here: Final file was ASCII text (the password).
+- Where used: Viewing small text files.
+
+- 🔁 What Actually Happened
+- The file was:
+- Hex → Gzip → Bzip2 → Gzip → Tar → Tar → Bzip2 → Tar → Gzip → Text
+- You carefully unpacked each layer.
+
+- follow the screenshorts for finding the password for this level...![StandingOvationGIF](https://github.com/user-attachments/assets/4eea60f3-4d70-4f94-b0c8-d39de741754a)
+
+
+
 - - connect -
 ```
 ssh bandit13@bandit.labs.overthewire.org -p 2220
