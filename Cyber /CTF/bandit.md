@@ -491,6 +491,12 @@ ssh bandit15@bandit.labs.overthewire.org -p 2220
 <img width="551" height="168" alt="image" src="https://github.com/user-attachments/assets/16b2d6a2-b21d-49ef-8ed2-b2fac3f4fb37" />
 
 
+- or type like this:
+- bandit14@bandit:~$ cat /etc/bandit_pass/bandit14 | nc localhost 30000
+- Correct!
+- 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+
+
 -  ##level-1
 - username - bandit1
 - password
