@@ -493,21 +493,41 @@ ssh bandit15@bandit.labs.overthewire.org -p 2220
 
 - or type like this:
 - bandit14@bandit:~$ cat /etc/bandit_pass/bandit14 | nc localhost 30000
+
+- explain:   cat – Reads the content of a file and prints it to the terminal (standard output).
+- /etc/bandit_pass/bandit14 – The file path that contains the password for Bandit level 14.
+- | (pipe) – Sends the output of the first command (cat) as input to the next command.
+- nc – Runs Netcat, a tool used to send or receive data over network connections.
+- localhost – Refers to the current machine (IP address 127.0.0.1).
+- 30000 – The port number where a service is running and waiting to receive the password.
+  
 - Correct!
 - 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 
 
--  ##level-1
-- username - bandit1
+-  ##level-16
+- username - bandit16
 - password
    ```
-   
+   kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
    ```
 #Commands:
+-  echo "8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo"
+-   echo "8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo" | openssl s_client -connect localhost:30001 -ign_eof
+
+-   explain: echo – Prints the given text to the terminal or sends it as output to another command.
+-   openssl – A command-line tool used for SSL/TLS encryption, certificates, and secure connections
+-   openssl – A command-line tool used to create and manage encryption, SSL/TLS connections, certificates, and secure communication.
+-   s_client – A subcommand of OpenSSL used to connect to a server using SSL/TLS and test secure connections.
+-   -connect – Specifies the server and port that OpenSSL should connect to.
+-   localhost – Refers to the local machine itself (IP address 127.0.0.1).
+-   -ign_eof means:
+- "Ignore end of input and keep the connection open until the server finishes responding."
+- -ign_eof is used to keep the SSL/TLS connection open after sending input so you can receive the full server response.
 - 
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit16@bandit.labs.overthewire.org -p 2220
 ```
 
 -  ##level-1
