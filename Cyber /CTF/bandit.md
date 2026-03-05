@@ -478,7 +478,7 @@ ssh bandit13@bandit.labs.overthewire.org -p 2220
 ssh bandit14@bandit.labs.overthewire.org -p 2220
 ```
 
--  ##level-15
+-  ## level-15
 - username - bandit15
 - password
    ```
@@ -505,7 +505,7 @@ ssh bandit15@bandit.labs.overthewire.org -p 2220
 - 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 
 
--  ##level-16
+-  ## level-16
 - username - bandit16
 - password
    ```
@@ -530,7 +530,7 @@ ssh bandit15@bandit.labs.overthewire.org -p 2220
 ssh bandit16@bandit.labs.overthewire.org -p 2220
 ```
 
--  ##level-1
+-  ## level-1
 - username - bandit1
 - password
    ```
@@ -543,7 +543,7 @@ ssh bandit16@bandit.labs.overthewire.org -p 2220
 ssh bandit13@bandit.labs.overthewire.org -p 2220
 ```
 
--  ##level-1
+-  ## level-1
 - username - bandit1
 - password
    ```
