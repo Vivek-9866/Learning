@@ -530,17 +530,51 @@ ssh bandit15@bandit.labs.overthewire.org -p 2220
 ssh bandit16@bandit.labs.overthewire.org -p 2220
 ```
 
--  ## level-1
+  ## level-17
 - username - bandit1
 - password
    ```
-   
+   EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
+
    ```
 #Commands:
-- 
+- The Corrected Command Sequence
+- Here is your updated sequence. Run these while logged into bandit16:
+
+- Step 1: Get the Key
+
+- Connect to the SSL port:
+- "openssl s_client -connect localhost:31790 -quiet"
+
+- Paste the bandit16 password and press Enter.
+
+- Carefully copy the entire RSA private key output, from -----BEGIN RSA PRIVATE KEY----- all the way down to -----END RSA PRIVATE KEY-----.
+
+- Step 2: Save the Key in a Writable Directory
+
+- idi vere terminal lo cheye( after do it in another terminal)
+
+- Create your own temporary folder:
+ - "mkdir /tmp/bhanu_workspace"
+- Move into that folder:
+- "cd /tmp/bhanu_workspace"
+
+- Create the key file:
+- "nano bandit17.key"
+- Paste the RSA key, save (Ctrl+O, Enter), and exit (Ctrl+X).
+
+- Step 3: Secure the Key and Log In
+Lock down the permissions so SSH accepts it:
+- "chmod 600 bandit17.key"
+
+- Log in to bandit17 from your current session (using localhost is easiest since you are already inside the Bandit network):
+- "ssh -i bandit17.key bandit17@bandit.labs.overthewire.org -p 2220"
+
+- after login to bandit 17 to type this command get level 17 password:
+- "cat /etc/bandit_pass/bandit17" 
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit17@bandit.labs.overthewire.org -p 2220
 ```
 
 -  ## level-1
