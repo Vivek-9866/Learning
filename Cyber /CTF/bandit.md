@@ -630,6 +630,176 @@ ssh bandit19@bandit.labs.overthewire.org -p 2220
 ssh bandit20@bandit.labs.overthewire.org -p 2220
 ```
 
+  ## level-21
+- username - bandit21
+- password
+   ```
+   EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+   ```
+#Commands:
+- ls
+- ./suconnect
+- "echo "pervious level password type here" | nc -l -p 4545 &"
+- "./suconnect 4545"
+
+
+
+- echo: Prints the text (your password) so it can be sent to the next command.
+
+- nc (netcat): A networking tool used to send or receive data across network connections.
+
+- "-l: Tells netcat to listen for an incoming connection rather than starting one.
+
+- "-p: Specifies the port number (like 4545) to use for the connection.
+
+- "&: Runs the command in the background so you can keep using the terminal.
+
+- "./: Tells Linux to look for and run a file in your current directory.
+
+- suconnect: The specific "SetUID" program that checks your password and gives the flag.
+
+- - connect -
+```
+ssh bandit21@bandit.labs.overthewire.org -p 2220
+```
+
+
+  ## level-22
+- username - bandit22
+- password
+   ```
+   tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+   ```
+#Commands:
+- bandit21@bandit:~$ ls /etc/cron.d/
+- behemoth4_cleanup  cronjob_bandit22  cronjob_bandit24  leviathan5_cleanup    otw-tmp-dir
+- clean_tmp          cronjob_bandit23  e2scrub_all       manpage3_resetpw_job  sysstat
+- bandit21@bandit:~$ cat /etc/cron.d/cronjob_bandit22
+- @reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+- * * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+- bandit21@bandit:~$ cat /usr/bin/cronjob_bandit22.sh
+- #!/bin/bash
+- chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+- cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+- bandit21@bandit:~$ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+- "tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q"
+
+- explain:
+- cron: A service that runs commands automatically at set times.
+- cron.d/: The folder holding the schedules for these tasks.
+- /etc/: Folder for system configuration files.
+- /usr/bin/: Folder where executable scripts are kept.
+- .sh: A Shell Script file (a list of commands).
+- /tmp/: A folder for temporary files.
+
+- - connect -
+```
+ssh bandit22@bandit.labs.overthewire.org -p 2220
+```
+
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+
+-  ##level-1
+- username - bandit1
+- password
+   ```
+   
+   ```
+#Commands:
+- 
+- - connect -
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+```
+
+
 -  ##level-1
 - username - bandit1
 - password
