@@ -577,43 +577,57 @@ Lock down the permissions so SSH accepts it:
 ssh bandit17@bandit.labs.overthewire.org -p 2220
 ```
 
--  ## level-1
+  ## level-18
 - username - bandit1
 - password
    ```
-   
+   x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
    ```
 #Commands:
-- 
+- diff passwords.old passwords.new
+- "diff = finds and displays differences between two files or directories."
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit18@bandit.labs.overthewire.org -p 2220
 ```
 
--  ##level-1
+-  ##level-19
 - username - bandit1
 - password
    ```
-   
+   cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
    ```
 #Commands:
-- 
+-  ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+-  after this lits comes like this:"bandit18@bandit.labs.overthewire.org's password: " in this type level 18 password after that u got level 19 password
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit19@bandit.labs.overthewire.org -p 2220
 ```
 
--  ##level-1
+-  ##level-20
 - username - bandit1
 - password
    ```
-   
+   0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
    ```
-#Commands:
-- 
+#Commands:here the commands line by line
+- bandit19@bandit:~$ ls
+- bandit20-do
+- bandit19@bandit:~$ file bandit20-do
+- bandit20-do: setuid ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, - BuildID[sha1]=38f1351d0068ccbbace0e437f34859de85e63025, for GNU/Linux 3.2.0, not stripped
+- "bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20"
+- 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
+
+- "./bandit20-do"
+
+- "./ means run a program from the current directory."
+- "bandit20-do is a special executable file provided in this level."
+- "It runs commands with the permissions of user bandit20."
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit20@bandit.labs.overthewire.org -p 2220
 ```
 
 -  ##level-1
