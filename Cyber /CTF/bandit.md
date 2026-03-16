@@ -698,17 +698,34 @@ ssh bandit22@bandit.labs.overthewire.org -p 2220
 ```
 
 
--  ##level-1
-- username - bandit1
+-  ##level-23
+- username - bandit23
 - password
    ```
-   
+   0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
    ```
 #Commands:
-- 
+- "bandit22@bandit:~$ cd /etc/cron.d"
+- "bandit22@bandit:/etc/cron.d$ ls"
+- behemoth4_cleanup  cronjob_bandit22  cronjob_bandit24  leviathan5_cleanup    otw-tmp-dir
+- clean_tmp          cronjob_bandit23  e2scrub_all       manpage3_resetpw_job  sysstat
+- "bandit22@bandit:/etc/cron.d$ cat cronjob_bandit23"
+- @reboot bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+- * * * * * bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+- "bandit22@bandit:/etc/cron.d$ cat /usr/bin/cronjob_bandit23.sh"
+- #!/bin/bash
+- myname=$(whoami)
+- mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+- echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+- cat /etc/bandit_pass/$myname > /tmp/$mytarget
+- "bandit22@bandit:/etc/cron.d$ mytarget=$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)"
+- "bandit22@bandit:/etc/cron.d$ cat /tmp/$mytarget"
+- 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit23@bandit.labs.overthewire.org -p 2220
 ```
 
 
