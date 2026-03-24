@@ -795,17 +795,17 @@ ssh bandit25@bandit.labs.overthewire.org -p 2220
 
 
 
--  ##level-1
-- username - bandit1
+  ## level-26
+- username - bandit26
 - password
    ```
-   
+   s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
    ```
 #Commands:
 - 
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit26@bandit.labs.overthewire.org -p 2220
 ```
 
 
