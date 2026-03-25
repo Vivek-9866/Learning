@@ -802,16 +802,44 @@ ssh bandit25@bandit.labs.overthewire.org -p 2220
    s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
    ```
 #Commands:
-- 
-- - connect -
+- 🔹 1. Login to bandit25
+- ssh bandit25@bandit.labs.overthewire.org -p 2220
+- 🔹 2. Check files
+- ls
+- 🔹 3. Show SSH key
+- cat bandit26.sshkey
+  
+- 👉 Copy the full key (BEGIN → END)
+
+- 🔹 4. Exit to Kali
+- exit
+- 🔹 5. Create key file in Kali
+- nano bandit26.sshkey
+
+- 👉 Paste key → Save
+
+- 🔹 6. Set permission
+- chmod 600 bandit26.sshkey
+- 🔹 7. Make terminal SMALL
+- stty rows 5 cols 40
+- 🔹 8. Connect using key
+- ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
+- 🔹 9. When screen pauses → press
+- v
+- 🔹 10. Inside vi
+- :set shell=/bin/bash
+- :shell
+- 🔹 11. Get password
+- cat /etc/bandit_pass/bandit26
+  - connect -
 ```
 ssh bandit26@bandit.labs.overthewire.org -p 2220
 ```
 
 
 
--  ##level-1
-- username - bandit1
+  ## level-27
+- username - bandit27
 - password
    ```
    
@@ -820,7 +848,7 @@ ssh bandit26@bandit.labs.overthewire.org -p 2220
 - 
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit27@bandit.labs.overthewire.org -p 2220
 ```
 
 
