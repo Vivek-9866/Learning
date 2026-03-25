@@ -842,55 +842,215 @@ ssh bandit26@bandit.labs.overthewire.org -p 2220
 - username - bandit27
 - password
    ```
-   
+   upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
    ```
 #Commands:
-- 
+- You already did:
+
+- bandit26@bandit:~$ cat /etc/bandit_pass/bandit26
+
+- 👉 That part is DONE (you already know that password)
+
+- 🎯 NOW do this (next steps)
+- 🔹 1. Check files
+- ls
+
+- 👉 You should see:
+
+- bandit27-do
+- 🔹 2. Use that file
+- ./bandit27-do ls
+- 🔹 3. Get next password
+- ./bandit27-do cat /etc/bandit_pass/bandit27
+- 🎉 That output = password for bandit27
+- 🔹 4. Exit
+- exit
+- 🔹 5. Login to next level
+
+- From Kali:
+
+- ssh bandit27@bandit.labs.overthewire.org -p 2220
+
+- 👉 Paste the password you just got
 - - connect -
 ```
 ssh bandit27@bandit.labs.overthewire.org -p 2220
 ```
 
 
--  ##level-1
-- username - bandit1
+-  ##level-28
+- username - bandit28
 - password
    ```
-   
+   Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
    ```
 #Commands:
-- 
+- Open your Kali terminal (do not log into bandit27 for this).
+
+- Go to a temporary working directory by typing:
+
+- cd /tmp
+
+- Create a new random folder:
+
+- mktemp -d
+
+- Enter that folder using:
+
+- cd <folder-name>
+- Clone the Git repository using:
+- git clone ssh://bandit27-git@bandit.labs.overthewire.org:2220/home/bandit27-git/repo
+- When it asks for a password, enter the bandit27 password.
+
+- After cloning is complete, go into the repository:
+
+- cd repo
+
+- List the files:
+
+- ls
+
+- Open the README file:
+
+- cat README
+- The text inside this file is the password for bandit28.
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit28@bandit.labs.overthewire.org -p 2220
 ```
 
 
--  ##level-1
-- username - bandit1
+  ## level-29
+- username - bandit29
 - password
    ```
-   
+   4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
    ```
 #Commands:
-- 
+- 🔹 1. Open Kali terminal
+
+- 👉 Do NOT use bandit server
+
+- 🔹 2. Go to temporary directory
+- cd /tmp
+
+- 👉 This is a safe place to work
+
+- 🔹 3. Create a random folder
+- mktemp -d
+
+- 👉 Creates a unique folder like:
+
+- /tmp/tmp.XYZ123
+- 🔹 4. Enter the folder
+- cd /tmp/tmp.XYZ123
+
+- 👉 OR shortcut:
+
+- cd $(mktemp -d)
+- 🔹 5. Clone the Git repository
+- git clone ssh://bandit28-git@bandit.labs.overthewire.org:2220/home/bandit28-git/repo
+
+- 👉 Enter password: bandit28 password
+
+- 🧠 Meaning:
+- git clone = download repository from server
+- 🔹 6. Go inside repository
+- cd repo
+- 🔹 7. Read the file
+- cat README.md
+
+- 👉 Output:
+- password: xxxxxxxx (hidden)
+ - ❌ Not useful
+
+- 🔹 8. Check Git history
+- git log
+- 🧠 Meaning:
+- Shows all previous versions (commits)
+- 🔹 9. Select an older commit
+
+- Example:
+
+- d0cf2ab7dd7ebc6075b59102a980155268f0fe8f
+
+- 👉 (the one before “fix info leak”)
+
+- 🔹 10. View old version of file
+- git show d0cf2ab7dd7ebc6075b59102a980155268f0fe8f
+- 🧠 Meaning:
+- Shows how file looked in past
+- 🎉 Result
+
+- 👉 You will see:
+
+- password: xxxxxxxxx
+
+- ✔ This is bandit29 password
+
+- 🔹 11. Login to next level
+- ssh bandit29@bandit.labs.overthewire.org -p 2220
+
+- Command	Meaning
+- mktemp -d	= create safe folder
+- git clone =	download repo
+- git log =	show history
+- git show =	show old version
+- cat = 	read file
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit29@bandit.labs.overthewire.org -p 2220
 ```
 
 
--  ##level-1
-- username - bandit1
+  ## level-30
+- username - bandit30
 - password
    ```
-   
+   qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
    ```
 #Commands:
-- 
+- 🔹 1.
+- cd /tmp
+- 👉 Moves to temporary directory (safe place to work)
+
+- 🔹 2.
+- cd $(mktemp -d)
+- 👉 Creates a random folder and enters it (private workspace)
+
+- 🔹 3.
+- git clone ssh://bandit29-git@bandit.labs.overthewire.org:2220/home/bandit29-git/repo
+- 👉 Downloads the repository from server
+- 👉 Enter bandit29 password
+
+- 🔹 4.
+- cd repo
+- 👉 Moves inside downloaded project folder
+
+- 🔹 5.
+- cat README.md
+- 👉 Reads file → password is hidden ❌
+
+- 🔹 6.
+- git branch -a
+- 👉 Shows all branches (different versions of project)
+
+- 🔹 7.
+- git checkout dev
+- 👉 Switches to dev branch (another version)
+
+- 🔹 8.
+- cat README.md
+- 👉 Reads file again → password is visible ✅
+
+- 🔹 9.
+- ssh bandit30@bandit.labs.overthewire.org -p 2220
+- 👉 Login to next level using found password
+
+  
 - - connect -
 ```
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ssh bandit30@bandit.labs.overthewire.org -p 2220
 ```
 
 
