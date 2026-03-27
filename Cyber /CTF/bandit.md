@@ -1103,20 +1103,127 @@ ssh bandit30@bandit.labs.overthewire.org -p 2220
 ssh bandit31@bandit.labs.overthewire.org -p 2220
 ```
 
-
- ## level-32
-- username - bandit32
-- password
+## here both level passwords are there they are connected
+ ## level-32 & 33
+- username - bandit32 & 33
+- password 32
+   ```
+   3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K
    ```
    
+   -  password 33
+   ```
+   tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
    ```
 #Commands:
+- 📘 Bandit 31 → 32 (How to find password)
+- 🔹 1.
+- cd /tmp
 
+- 👉 Move to temporary directory (safe workspace)
+
+- 🔹 2.
+- cd $(mktemp -d)
+
+- 👉 Create and enter random folder
+
+- 🔹 3.
+- git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
+
+- 👉 Download repository
+- 👉 Enter bandit31 password
+
+- 🔹 4.
+- cd repo
+
+- 👉 Enter project folder
+
+- 🔹 5.
+- cat README.md
+
+- 👉 Shows instruction:
+- 👉 create file with text “May I come in?”
+
+- 🔹 6.
+- echo "May I come in?" > key.txt
+
+- 👉 Create file with required content
+
+- 🔹 7.
+- git add -f key.txt
+
+- 👉 Force add file (because .gitignore blocks .txt files)
+
+- 🔹 8.
+- git commit -m "add key"
+
+- 👉 Save changes in git
+
+- 🔹 9.
+- git push origin master
+
+- 👉 Upload file to server
+- 👉 Enter bandit31 password
+
+- 🎉 Result
+
+- 👉 You get:
+
+- 3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K
+
+- ✔ This is bandit32 password
+
+- 📘 Bandit 32 → 33 (Next level)
+- 🔹 10.
+- ssh bandit32@bandit.labs.overthewire.org -p 2220
+
+- 👉 Login using bandit32 password
+
+- 🔹 11.
+ -WELCOME TO THE UPPERCASE SHELL
+- >>
+
+ - 👉 Commands become uppercase ❌
+
+- 🔹 12.
+- $0
+
+- 👉 Open normal shell (bypass uppercase)
+
+- 🔹 13.
+- cat /etc/bandit_pass/bandit33
+
+- 👉 Read next password
+
+- 🎉 Result
+- tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
+
+- ✔ This is bandit33 password
+
+- 📘 Bandit 33 (Final)
+- 🔹 14.
+- ssh bandit33@bandit.labs.overthewire.org -p 2220
+
+- 👉 Login to final level
+
+- 🔹 15.
+
+- 👉 Enter password:
+
+- tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
+- 🎉 Output
+
+- 👉 You finished Bandit 🎯
+
+- 🧠 Final Summary
+- Level 31 → push file → get password
+- Level 32 → bypass shell → get password
+- Level 33 → final login
 
   
 - - connect -
 ```
-ssh bandit30@bandit.labs.overthewire.org -p 2220
+ssh bandit33@bandit.labs.overthewire.org -p 2220
 ```
 
  ## level-30
