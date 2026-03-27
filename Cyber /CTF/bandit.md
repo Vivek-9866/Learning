@@ -1053,5 +1053,98 @@ ssh bandit29@bandit.labs.overthewire.org -p 2220
 ssh bandit30@bandit.labs.overthewire.org -p 2220
 ```
 
+ ## level-31
+- username - bandit31
+- password
+   ```
+   fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
+   ```
+#Commands:
+- 1.
+- cd /tmp
+
+- 👉 Go to temporary directory (safe place)
+
+- 🔹 2.
+- cd $(mktemp -d)
+
+- 👉 Create and enter a random folder
+
+- 🔹 3.
+- git clone ssh://bandit30-git@bandit.labs.overthewire.org:2220/home/bandit30-git/repo
+
+- 👉 Clone repository
+- 👉 Enter bandit30 password
+
+- 🔹 4.
+- cd repo
+
+- 👉 Enter project folder
+
+- 🔹 5.
+- ls
+
+- 👉 Check files (nothing useful ❌)
+
+ -🔹 6.
+- git tag
+
+- 👉 Show tags (special hidden versions)
+
+- 🔹 7.
+
+- 👉 You will see: secret
+- 🔹 8.
+- git show secret
+- 👉 Show hidden content inside tag
+
+- - connect -
+```
+ssh bandit31@bandit.labs.overthewire.org -p 2220
+```
 
 
+ ## level-32
+- username - bandit32
+- password
+   ```
+   
+   ```
+#Commands:
+
+
+  
+- - connect -
+```
+ssh bandit30@bandit.labs.overthewire.org -p 2220
+```
+
+ ## level-30
+- username - bandit30
+- password
+   ```
+   
+   ```
+#Commands:
+
+
+  
+- - connect -
+```
+ssh bandit30@bandit.labs.overthewire.org -p 2220
+```
+
+ ## level-30
+- username - bandit30
+- password
+   ```
+   
+   ```
+#Commands:
+
+
+  
+- - connect -
+```
+ssh bandit30@bandit.labs.overthewire.org -p 2220
+```
