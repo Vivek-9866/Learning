@@ -1226,8 +1226,8 @@ ssh bandit31@bandit.labs.overthewire.org -p 2220
 ssh bandit33@bandit.labs.overthewire.org -p 2220
 ```
 
- ## level-30
-- username - bandit30
+ ## level-
+- username - bandit
 - password
    ```
    
@@ -1238,20 +1238,6 @@ ssh bandit33@bandit.labs.overthewire.org -p 2220
   
 - - connect -
 ```
-ssh bandit30@bandit.labs.overthewire.org -p 2220
+ssh bandit1@bandit.labs.overthewire.org -p 2220
 ```
 
- ## level-30
-- username - bandit30
-- password
-   ```
-   
-   ```
-#Commands:
-
-
-  
-- - connect -
-```
-ssh bandit30@bandit.labs.overthewire.org -p 2220
-```
