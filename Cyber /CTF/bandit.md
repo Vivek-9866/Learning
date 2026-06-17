@@ -137,6 +137,8 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 -  So ./filename means:
 -  👉 “Run the file named filename that is located in the current directory.”
 
+  <img width="382" height="96" alt="image" src="https://github.com/user-attachments/assets/d12bf6c9-80c8-49ec-ada1-37a568ae3aee" />
+
 - connect -
 ```
 ssh bandit2@bandit.labs.overthewire.org -p 2220
@@ -147,12 +149,13 @@ ssh bandit2@bandit.labs.overthewire.org -p 2220
 - How it come:
 - bandit2@bandit:~$ ls
 - --spaces in this filename--
-- bandit2@bandit:~$ cat -- --spaces\ in\ this\ filename--
+- bandit2@bandit:~$ cat -- "--spaces in this filename--"
 - MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 - password
    ```
    MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
    ```
+<img width="772" height="157" alt="image" src="https://github.com/user-attachments/assets/bd7b9179-82a9-451a-858f-77f3e11b786b" />
 
  - connect -
 ```
@@ -172,6 +175,7 @@ ssh bandit3@bandit.labs.overthewire.org -p 2220
    ```
    2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
    ```
+<img width="947" height="346" alt="image" src="https://github.com/user-attachments/assets/a9b14cbf-e52f-47fa-a8ca-1574b45ad13d" />
 
 
 - connect -
@@ -190,8 +194,13 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
 - cd inhere/
 - ls
 - file ./*
+- file identifies the type/content of a file (text file, binary file, directory, etc.).
+./* means "all files and folders in the current directory", so the command checks every item in the
 - cat ./-file07
 - ssh bandit5@localhost
+
+  <img width="977" height="800" alt="image" src="https://github.com/user-attachments/assets/a52c142c-b6db-452c-bd34-eecaf1c07eaf" />
+
 
 - - connect -
 ```
