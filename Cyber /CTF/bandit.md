@@ -92,6 +92,9 @@ Search → Read → Think → Crack → Next
  ## level-0
 - username - bandit0
 - password - bandit0
+
+   <img width="1447" height="305" alt="image" src="https://github.com/user-attachments/assets/6e661437-b4ce-4077-a39c-b47a54a16ca9" />
+
 - connect -
 ```
 ssh bandit0@bandit.labs.overthewire.org -p 2220
@@ -117,7 +120,7 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
  ```
  ssh bandit1@bandit.labs.overthewire.org -p 2220
 ```
-- <img width="1447" height="305" alt="image" src="https://github.com/user-attachments/assets/6e661437-b4ce-4077-a39c-b47a54a16ca9" />
+  <img width="382" height="96" alt="image" src="https://github.com/user-attachments/assets/d12bf6c9-80c8-49ec-ada1-37a568ae3aee" />
 
 
   ## level-2
@@ -137,7 +140,8 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 -  So ./filename means:
 -  👉 “Run the file named filename that is located in the current directory.”
 
-  <img width="382" height="96" alt="image" src="https://github.com/user-attachments/assets/d12bf6c9-80c8-49ec-ada1-37a568ae3aee" />
+<img width="772" height="157" alt="image" src="https://github.com/user-attachments/assets/bd7b9179-82a9-451a-858f-77f3e11b786b" />
+
 
 - connect -
 ```
@@ -155,7 +159,7 @@ ssh bandit2@bandit.labs.overthewire.org -p 2220
    ```
    MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
    ```
-<img width="772" height="157" alt="image" src="https://github.com/user-attachments/assets/bd7b9179-82a9-451a-858f-77f3e11b786b" />
+<img width="947" height="346" alt="image" src="https://github.com/user-attachments/assets/a9b14cbf-e52f-47fa-a8ca-1574b45ad13d" />
 
  - connect -
 ```
@@ -175,7 +179,7 @@ ssh bandit3@bandit.labs.overthewire.org -p 2220
    ```
    2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
    ```
-<img width="947" height="346" alt="image" src="https://github.com/user-attachments/assets/a9b14cbf-e52f-47fa-a8ca-1574b45ad13d" />
+  <img width="977" height="800" alt="image" src="https://github.com/user-attachments/assets/a52c142c-b6db-452c-bd34-eecaf1c07eaf" />
 
 
 - connect -
@@ -199,7 +203,6 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
 - cat ./-file07
 - ssh bandit5@localhost
 
-  <img width="977" height="800" alt="image" src="https://github.com/user-attachments/assets/a52c142c-b6db-452c-bd34-eecaf1c07eaf" />
 
 
 - - connect -
