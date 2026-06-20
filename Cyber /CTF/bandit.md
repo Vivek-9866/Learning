@@ -179,6 +179,17 @@ ssh bandit3@bandit.labs.overthewire.org -p 2220
    ```
    2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
    ```
+
+  ## commands:
+- ls -la
+- cd inhere/
+- ls
+- file ./*
+- file identifies the type/content of a file (text file, binary file, directory, etc.).
+./* means "all files and folders in the current directory", so the command checks every item in the
+- cat ./-file07
+
+  
   <img width="977" height="800" alt="image" src="https://github.com/user-attachments/assets/a52c142c-b6db-452c-bd34-eecaf1c07eaf" />
 
 
@@ -194,15 +205,14 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
    4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
    ```
 ## commands:
-- ls -la
+- ls
 - cd inhere/
 - ls
-- file ./*
-- file identifies the type/content of a file (text file, binary file, directory, etc.).
-./* means "all files and folders in the current directory", so the command checks every item in the
-- cat ./-file07
-- ssh bandit5@localhost
+- find . -size 1033c
+- cat ./maybehere07/.file2
 
+
+<img width="1052" height="297" alt="image" src="https://github.com/user-attachments/assets/392d4e8e-75ca-4e52-95ab-9705b85fe44c" />
 
 
 - - connect -
@@ -215,13 +225,22 @@ ssh bandit5@bandit.labs.overthewire.org -p 2220
    ```
    HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
    ```
+   - - connect -
+```
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+```
+
+   <img width="462" height="561" alt="image" src="https://github.com/user-attachments/assets/fe8baa9f-d477-4fbe-b66d-e1059a57dfe5" />
+   <img width="761" height="485" alt="image" src="https://github.com/user-attachments/assets/228c6bde-0f85-46d7-ae12-cb0729052b5a" />
+
+
 ## Commands: Type one by one
-- ls
-- cd inhere/
-- ls
-- find . -size 1033c
-- cat ./maybehere07/.file2
-- ssh bandit6@localhost
+- find / -user bandit7 -group bandit6 -size 33c (find / → Search the entire filesystem starting from the root (/).
+-user bandit7 -group bandit6 -size 33c → Show only files owned by user bandit7, belonging to group bandit6, and having an exact size of 33 bytes (c = bytes).)
+
+- cat /var/lib/dpkg/info/bandit7.password
+ - ssh bandit7@localhost
+
 
 - - connect -
 ```
@@ -234,23 +253,20 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
    ```
    morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
    ```
+
+  - - connect -
+```
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+```
 ## Commands:
-- find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
-- cat /var/lib/dpkg/info/bandit7.password
-- ssh bandit7@localhost
+- ls
+- cat data.txt | grep millionth (grep millionth → Searches the displayed text and shows only the line(s) containing the word "millionth".)
 
-- 2>/dev/null
+- ssh bandit8@localhost
 
-- This is about error handling.
 
-- 2 → refers to stderr (error output)
+<img width="455" height="172" alt="image" src="https://github.com/user-attachments/assets/3cbccda7-3765-4b7c-a712-c6fe9a513abd" />
 
-- > → redirect
-
-- /dev/null → a special file that discards everything
-
-- When searching from /, you’ll hit directories you don’t have permission to read.
-- Without this part, your screen would fill with errors like:
 - - connect -
 ```
 ssh bandit7@bandit.labs.overthewire.org -p 2220
@@ -261,17 +277,22 @@ ssh bandit7@bandit.labs.overthewire.org -p 2220
    ```
    dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
    ```
-## Commands:
--  man - an interface to the system reference manuals
--  ls
-- cat data.txt | grep millionth
-- (((grep millionth
-- "grep" searches for text patterns inside input.
-- millionth is the word we’re searching for.
--  The "|" symbol is called a pipe.
--  It sends the output of the first command as input to the second command.)))
 
-  
+   - - connect -
+```
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+```
+
+
+## Commands:
+- cat data.txt | sort | uniq -u
+
+  <img width="430" height="122" alt="image" src="https://github.com/user-attachments/assets/181517e6-a48b-4662-a66e-d8cdbe66f575" />
+
+## explanation:
+- sort → Arranges all lines in alphabetical order.
+- uniq -u → Shows only the lines that appear exactly once (removes duplicates).
+
 - ssh bandit8@localhost
 - - connect -
 ```
@@ -284,37 +305,53 @@ ssh bandit8@bandit.labs.overthewire.org -p 2220
    ```
    4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
    ```
-## Commands:
-- cat data.txt | sort | uniq -u
 
-- ((( Line 1: sort data.txt arranges all lines in alphabetical order so identical lines are grouped together.
-- Line 2: uniq -u then prints only the lines that appear exactly once (removes duplicates and keeps unique entries only).)))
-
-
-- ssh bandit9@localhost
-- - connect -
+  - - connect -
 ```
 ssh bandit9@bandit.labs.overthewire.org -p 2220
 ```
+
+## Commands:
+- ls
+- cat data.txt | sort | uniq -u
+
+## explaination:
+- strings data.txt → Extracts and displays readable text from a file (useful for binary files).
+- grep = → Searches for and shows only the lines containing the = character.
+
+- In one sentence: This command extracts readable text from data.txt and displays only the lines that contain an = sign.
+
+
+<img width="437" height="237" alt="image" src="https://github.com/user-attachments/assets/4528a48f-eec7-457d-beb6-f3249f845b2c" />
+
+
+- ssh bandit9@localhost
+
   ## level-10
 - username - bandit10
 - password
    ```
    FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
    ```
-## Commands:
-- - ls
-- strings data.txt | grep =
 
-- ((( strings data.txt extracts readable text from a file (useful if it contains binary or mixed content).
-- grep = filters that output to show only lines containing the = character.)))
-
-  
-- ssh bandit10@localhost
-- - connect -
+  - - connect -
 ```
 ssh bandit10@bandit.labs.overthewire.org -p 2220
 ```
+
+## Commands:
+- ls
+- cat data.txt | base64 --decode
+## explanation:
+- cat data.txt → Reads and displays the contents of data.txt.
+- base64 --decode → Decodes the Base64-encoded text back into its original readable form.
+- In one sentence: This command reads Base64-encoded data from data.txt and converts it back to the
+
+  
+  <img width="457" height="120" alt="image" src="https://github.com/user-attachments/assets/838e8052-47d6-411a-b047-db451c6487a6" />
+
+- ssh bandit10@localhost
+
   ## level-11
 - username - bandit8 
 - password
