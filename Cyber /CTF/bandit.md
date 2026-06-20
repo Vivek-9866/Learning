@@ -397,6 +397,7 @@ ssh bandit12@bandit.labs.overthewire.org -p 2220
 - ls
 - cat data.txt
 - after that comes like thiss = Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4
+  
 - copy this one and open cyberchef.io after paste in that input space next in search bar   search in Rot13 then your password is shown in output...😉
 
   
