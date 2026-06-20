@@ -392,13 +392,17 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
    ```
 ## Commands:
 - ls
-- cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-Za-m]'
-- tr '[A-Za-z]' '[N-ZA-Mn-za-m]' uses the tr (translate) command to replace characters from one - set with another.
+- cat data.txt | tr a-zA-Z n-za-mN-ZA-M
 
-- [A-Za-z] represents all uppercase (A–Z) and lowercase (a–z) letters.
-
-- [N-ZA-Mn-za-m] is the ROT13-mapped alphabet (A→N, B→O … N→A), so it shifts each letter by 13 - - positions, commonly used for simple text encoding/decoding.
+  ## explanantion:
+- cat data.txt → Reads and outputs the contents of data.txt.
+- tr (translate) → Replaces characters from the first set (a-zA-Z) with the corresponding characters in the second set (n-za-mN-ZA-M).
+- This performs ROT13 encoding/decoding, shifting each letter by 13 positions (A↔N, B↔O, a↔n, b↔o).
+  
 - ssh bandit12@localhost
+
+  <img width="581" height="97" alt="image" src="https://github.com/user-attachments/assets/67e244d8-df9d-48db-9c8f-17741eeca638" />
+
 - - connect -
 ```
 ssh bandit12@bandit.labs.overthewire.org -p 2220
@@ -517,8 +521,6 @@ ssh bandit12@bandit.labs.overthewire.org -p 2220
 - The file was:
 - Hex → Gzip → Bzip2 → Gzip → Tar → Tar → Bzip2 → Tar → Gzip → Text
 - You carefully unpacked each layer.
-
-- follow the screenshorts for finding the password for this level...![StandingOvationGIF](https://github.com/user-attachments/assets/4eea60f3-4d70-4f94-b0c8-d39de741754a)
 
 
 
