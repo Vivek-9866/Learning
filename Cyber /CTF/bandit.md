@@ -536,7 +536,20 @@ ssh bandit13@bandit.labs.overthewire.org -p 2220
    MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
    ```
 ## Commands:
-- 
+
+<img width="595" height="502" alt="image" src="https://github.com/user-attachments/assets/94df8ea0-bdcb-4bb7-8417-eb27af4e9cf3" />
+
+- after exit that ssh level and type like this
+
+  <img width="712" height="697" alt="image" src="https://github.com/user-attachments/assets/ee3f9179-8d07-4098-907d-572d0547a755" />
+
+<img width="640" height="646" alt="image" src="https://github.com/user-attachments/assets/5d8245e8-8b31-47f4-b3ef-e28fe9cdbc52" />
+
+- after this you directlly login in bandit 14 here you get the password....
+
+  <img width="502" height="70" alt="image" src="https://github.com/user-attachments/assets/e0e85d7b-0cc2-4cc5-aec3-8135ffe4e8fb" />
+
+
 - - connect -
 ```
 ssh bandit14@bandit.labs.overthewire.org -p 2220
