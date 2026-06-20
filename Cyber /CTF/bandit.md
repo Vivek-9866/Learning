@@ -117,18 +117,6 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 - ## 1 block = 4 KB
 
 
-
-## commands:
-- the file name is- ‘ -’.
-- "."=type in './-'
-
-- In Linux, the command ./ is used to run a program (script or executable file) from the current directory.
-- 🔹 What does ./ mean?
--  → represents the current directory
--  / → separates directories
--  So ./filename means:
--  👉 “Run the file named filename that is located in the current directory.” 
-
 - connect -
  ```
  ssh bandit1@bandit.labs.overthewire.org -p 2220
@@ -196,11 +184,11 @@ ssh bandit3@bandit.labs.overthewire.org -p 2220
    ```
 
   ## commands:
-ls
-cd inhere/
-ls
-ls -al
-cat ...hidden-for-you
+- ls
+- cd inhere/
+- ls
+- ls -al
+- cat ...hidden-for-you
 
   <img width="947" height="346" alt="image" src="https://github.com/user-attachments/assets/a9b14cbf-e52f-47fa-a8ca-1574b45ad13d" />
 
