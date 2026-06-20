@@ -93,8 +93,6 @@ Search → Read → Think → Crack → Next
 - username - bandit0
 - password - bandit0
 
-   <img width="1447" height="305" alt="image" src="https://github.com/user-attachments/assets/6e661437-b4ce-4077-a39c-b47a54a16ca9" />
-
 - connect -
 ```
 ssh bandit0@bandit.labs.overthewire.org -p 2220
@@ -105,6 +103,9 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ```
+
+ <img width="1447" height="305" alt="image" src="https://github.com/user-attachments/assets/6e661437-b4ce-4077-a39c-b47a54a16ca9" />
+
 ## Commands:
 - ls- check the how many Files are there.
 - Cat-To read the content of the file type.
@@ -120,8 +121,6 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
  ```
  ssh bandit1@bandit.labs.overthewire.org -p 2220
 ```
-  <img width="382" height="96" alt="image" src="https://github.com/user-attachments/assets/d12bf6c9-80c8-49ec-ada1-37a568ae3aee" />
-
 
   ## level-2
 - username - bandit2
@@ -140,7 +139,10 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 -  So ./filename means:
 -  👉 “Run the file named filename that is located in the current directory.”
 
-<img width="772" height="157" alt="image" src="https://github.com/user-attachments/assets/bd7b9179-82a9-451a-858f-77f3e11b786b" />
+
+  <img width="382" height="96" alt="image" src="https://github.com/user-attachments/assets/d12bf6c9-80c8-49ec-ada1-37a568ae3aee" />
+
+
 
 
 - connect -
@@ -159,7 +161,8 @@ ssh bandit2@bandit.labs.overthewire.org -p 2220
    ```
    MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
    ```
-<img width="947" height="346" alt="image" src="https://github.com/user-attachments/assets/a9b14cbf-e52f-47fa-a8ca-1574b45ad13d" />
+
+<img width="772" height="157" alt="image" src="https://github.com/user-attachments/assets/bd7b9179-82a9-451a-858f-77f3e11b786b" />
 
  - connect -
 ```
@@ -181,16 +184,13 @@ ssh bandit3@bandit.labs.overthewire.org -p 2220
    ```
 
   ## commands:
-- ls -la
-- cd inhere/
-- ls
-- file ./*
-- file identifies the type/content of a file (text file, binary file, directory, etc.).
-./* means "all files and folders in the current directory", so the command checks every item in the
-- cat ./-file07
+ls
+cd inhere/
+ls
+ls -al
+cat ...hidden-for-you
 
-  
-  <img width="977" height="800" alt="image" src="https://github.com/user-attachments/assets/a52c142c-b6db-452c-bd34-eecaf1c07eaf" />
+  <img width="947" height="346" alt="image" src="https://github.com/user-attachments/assets/a9b14cbf-e52f-47fa-a8ca-1574b45ad13d" />
 
 
 - connect -
@@ -205,14 +205,22 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
    4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
    ```
 ## commands:
+- ls -la
+- cd inhere/
+- ls
+- file ./*
+- file identifies the type/content of a file (text file, binary file, directory, etc.).
+./* means "all files and folders in the current directory", so the command checks every item in the
+- cat ./-file07
 - ls
 - cd inhere/
 - ls
 - find . -size 1033c
 - cat ./maybehere07/.file2
 
+  <img width="977" height="800" alt="image" src="https://github.com/user-attachments/assets/a52c142c-b6db-452c-bd34-eecaf1c07eaf" />
 
-<img width="1052" height="297" alt="image" src="https://github.com/user-attachments/assets/392d4e8e-75ca-4e52-95ab-9705b85fe44c" />
+
 
 
 - - connect -
@@ -229,6 +237,16 @@ ssh bandit5@bandit.labs.overthewire.org -p 2220
 ```
 ssh bandit6@bandit.labs.overthewire.org -p 2220
 ```
+
+## commnds:
+- ls
+- cd inhere/
+- ls
+- find . -size 1033c
+- cat ./maybehere07/.file2
+
+<img width="1052" height="297" alt="image" src="https://github.com/user-attachments/assets/392d4e8e-75ca-4e52-95ab-9705b85fe44c" />
+
 
    <img width="462" height="561" alt="image" src="https://github.com/user-attachments/assets/fe8baa9f-d477-4fbe-b66d-e1059a57dfe5" />
    <img width="761" height="485" alt="image" src="https://github.com/user-attachments/assets/228c6bde-0f85-46d7-ae12-cb0729052b5a" />
@@ -258,7 +276,18 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 ```
 ssh bandit7@bandit.labs.overthewire.org -p 2220
 ```
-## Commands:
+## Commands: Type one by one
+- find / -user bandit7 -group bandit6 -size 33c (find / → Search the entire filesystem starting from the root (/).
+-user bandit7 -group bandit6 -size 33c → Show only files owned by user bandit7, belonging to group bandit6, and having an exact size of 33 bytes (c = bytes).)
+
+- cat /var/lib/dpkg/info/bandit7.password
+ - ssh bandit7@localhost
+
+
+ <img width="462" height="561" alt="image" src="https://github.com/user-attachments/assets/fe8baa9f-d477-4fbe-b66d-e1059a57dfe5" />
+ 
+ <img width="761" height="485" alt="image" src="https://github.com/user-attachments/assets/228c6bde-0f85-46d7-ae12-cb0729052b5a" />
+
 - ls
 - cat data.txt | grep millionth (grep millionth → Searches the displayed text and shows only the line(s) containing the word "millionth".)
 
@@ -285,15 +314,15 @@ ssh bandit8@bandit.labs.overthewire.org -p 2220
 
 
 ## Commands:
-- cat data.txt | sort | uniq -u
-
-  <img width="430" height="122" alt="image" src="https://github.com/user-attachments/assets/181517e6-a48b-4662-a66e-d8cdbe66f575" />
-
-## explanation:
-- sort → Arranges all lines in alphabetical order.
-- uniq -u → Shows only the lines that appear exactly once (removes duplicates).
+- ls
+- cat data.txt | grep millionth (grep millionth → Searches the displayed text and shows only the line(s) containing the word "millionth".)
 
 - ssh bandit8@localhost
+
+
+<img width="455" height="172" alt="image" src="https://github.com/user-attachments/assets/3cbccda7-3765-4b7c-a712-c6fe9a513abd" />
+
+
 - - connect -
 ```
 ssh bandit8@bandit.labs.overthewire.org -p 2220
@@ -312,18 +341,14 @@ ssh bandit9@bandit.labs.overthewire.org -p 2220
 ```
 
 ## Commands:
-- ls
+
 - cat data.txt | sort | uniq -u
 
-## explaination:
-- strings data.txt → Extracts and displays readable text from a file (useful for binary files).
-- grep = → Searches for and shows only the lines containing the = character.
+  <img width="430" height="122" alt="image" src="https://github.com/user-attachments/assets/181517e6-a48b-4662-a66e-d8cdbe66f575" />
 
-- In one sentence: This command extracts readable text from data.txt and displays only the lines that contain an = sign.
-
-
-<img width="437" height="237" alt="image" src="https://github.com/user-attachments/assets/4528a48f-eec7-457d-beb6-f3249f845b2c" />
-
+## explanation:
+- sort → Arranges all lines in alphabetical order.
+- uniq -u → Shows only the lines that appear exactly once (removes duplicates).
 
 - ssh bandit9@localhost
 
@@ -340,15 +365,20 @@ ssh bandit10@bandit.labs.overthewire.org -p 2220
 ```
 
 ## Commands:
-- ls
-- cat data.txt | base64 --decode
-## explanation:
-- cat data.txt → Reads and displays the contents of data.txt.
-- base64 --decode → Decodes the Base64-encoded text back into its original readable form.
-- In one sentence: This command reads Base64-encoded data from data.txt and converts it back to the
+ls
+strings data.txt | grep =
+ssh bandit10@localhost
 
-  
-  <img width="457" height="120" alt="image" src="https://github.com/user-attachments/assets/838e8052-47d6-411a-b047-db451c6487a6" />
+## explaination:
+- strings data.txt → Extracts and displays readable text from a file (useful for binary files).
+- grep = → Searches for and shows only the lines containing the = character.
+
+- In one sentence: This command extracts readable text from data.txt and displays only the lines that contain an = sign.
+
+
+<img width="437" height="237" alt="image" src="https://github.com/user-attachments/assets/4528a48f-eec7-457d-beb6-f3249f845b2c" />
+
+
 
 - ssh bandit10@localhost
 
@@ -360,10 +390,13 @@ ssh bandit10@bandit.labs.overthewire.org -p 2220
    ```
 ## Commands:
 -ls
-- cat data.txt | base64 -d
+- cat data.txt | base64 --decode
 
-- ((( cat data.txt prints the contents of the file, and the | pipe sends that output to the next command.
-- base64 -d decodes the Base64-encoded text back into its original readable form.)))
+## explanation:
+- cat data.txt → Reads and displays the contents of data.txt.
+- base64 --decode → Decodes the Base64-encoded text back into its original readable form.
+- In one sentence: This command reads Base64-encoded data from data.txt and converts it back to the
+  <img width="457" height="120" alt="image" src="https://github.com/user-attachments/assets/838e8052-47d6-411a-b047-db451c6487a6" />
 
   
 - ssh bandit11@localhost
