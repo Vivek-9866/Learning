@@ -141,13 +141,18 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ```
 
-## Commands:
-- The name of the file is ‘spaces in this filename’. When you try to cat out the filename as is, since there are spaces in the name of the file, the command assumes each word separated by space to be a separate file.
-- ## why we use "--" this one for cat command,
-- because.. cat -- --spaces\ in\ this\ filename--
-- means:
-- First -- → tells cat to stop parsing options
-- Second part → actual filename
+
+## commands:
+- the file name is- ‘ -’.
+- "."=type in './-'
+
+- In Linux, the command ./ is used to run a program (script or executable file) from the current directory.
+- 🔹 What does ./ mean?
+-  → represents the current directory
+-  / → separates directories
+-  So ./filename means:
+-  👉 “Run the file named filename that is located in the current directory.” 
+
 
 
   <img width="382" height="96" alt="image" src="https://github.com/user-attachments/assets/d12bf6c9-80c8-49ec-ada1-37a568ae3aee" />
@@ -174,6 +179,14 @@ ssh bandit2@bandit.labs.overthewire.org -p 2220
 ssh bandit3@bandit.labs.overthewire.org -p 2220
 ```
 ## Commands:
+- The name of the file is ‘spaces in this filename’. When you try to cat out the filename as is, since there are spaces in the name of the file, the command assumes each word separated by space to be a separate file.
+- ## why we use "--" this one for cat command,
+- because.. cat -- --spaces\ in\ this\ filename--
+- means:
+- First -- → tells cat to stop parsing options
+- Second part → actual filename
+
+
 
  ## level-4
 - username - bandit4
@@ -211,11 +224,7 @@ ssh bandit4@bandit.labs.overthewire.org -p 2220
 - file identifies the type/content of a file (text file, binary file, directory, etc.).
 ./* means "all files and folders in the current directory", so the command checks every item in the
 - cat ./-file07
-- ls
-- cd inhere/
-- ls
-- find . -size 1033c
-- cat ./maybehere07/.file2
+
 
   <img width="977" height="800" alt="image" src="https://github.com/user-attachments/assets/a52c142c-b6db-452c-bd34-eecaf1c07eaf" />
 
@@ -247,16 +256,6 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 <img width="1052" height="297" alt="image" src="https://github.com/user-attachments/assets/392d4e8e-75ca-4e52-95ab-9705b85fe44c" />
 
 
-   <img width="462" height="561" alt="image" src="https://github.com/user-attachments/assets/fe8baa9f-d477-4fbe-b66d-e1059a57dfe5" />
-   <img width="761" height="485" alt="image" src="https://github.com/user-attachments/assets/228c6bde-0f85-46d7-ae12-cb0729052b5a" />
-
-
-## Commands: Type one by one
-- find / -user bandit7 -group bandit6 -size 33c (find / → Search the entire filesystem starting from the root (/).
--user bandit7 -group bandit6 -size 33c → Show only files owned by user bandit7, belonging to group bandit6, and having an exact size of 33 bytes (c = bytes).)
-
-- cat /var/lib/dpkg/info/bandit7.password
- - ssh bandit7@localhost
 
 
 - - connect -
@@ -287,13 +286,6 @@ ssh bandit7@bandit.labs.overthewire.org -p 2220
  
  <img width="761" height="485" alt="image" src="https://github.com/user-attachments/assets/228c6bde-0f85-46d7-ae12-cb0729052b5a" />
 
-- ls
-- cat data.txt | grep millionth (grep millionth → Searches the displayed text and shows only the line(s) containing the word "millionth".)
-
-- ssh bandit8@localhost
-
-
-<img width="455" height="172" alt="image" src="https://github.com/user-attachments/assets/3cbccda7-3765-4b7c-a712-c6fe9a513abd" />
 
 - - connect -
 ```
