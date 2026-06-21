@@ -567,6 +567,8 @@ ssh bandit15@bandit.labs.overthewire.org -p 2220
 ```
 <img width="551" height="168" alt="image" src="https://github.com/user-attachments/assets/16b2d6a2-b21d-49ef-8ed2-b2fac3f4fb37" />
 
+<img width="592" height="117" alt="image" src="https://github.com/user-attachments/assets/6bb3de3c-3438-4710-922e-c767bc05ff76" />
+
 
 - or type like this:
 - bandit14@bandit:~$ cat /etc/bandit_pass/bandit14 | nc localhost 30000
@@ -592,20 +594,18 @@ ssh bandit15@bandit.labs.overthewire.org -p 2220
 -  echo "8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo"
 -   echo "8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo" | openssl s_client -connect localhost:30001 -ign_eof
 
--   explain: echo – Prints the given text to the terminal or sends it as output to another command.
--   openssl – A command-line tool used for SSL/TLS encryption, certificates, and secure connections
--   openssl – A command-line tool used to create and manage encryption, SSL/TLS connections, certificates, and secure communication.
--   s_client – A subcommand of OpenSSL used to connect to a server using SSL/TLS and test secure connections.
--   -connect – Specifies the server and port that OpenSSL should connect to.
--   localhost – Refers to the local machine itself (IP address 127.0.0.1).
--   -ign_eof means:
-- "Ignore end of input and keep the connection open until the server finishes responding."
-- -ign_eof is used to keep the SSL/TLS connection open after sending input so you can receive the full server response.
-- 
+-  echo "..." → Prints the password/text and sends it to the next command through the pipe (|).
+- openssl s_client → Creates an SSL/TLS client connection to communicate securely with a server.
+- -connect localhost:30001 → Connects to port 30001 on the local machine (localhost).
+- -ign_eof → Keeps the connection open even after echo finishes sending the text.
+
+Purpose: Sends the password securely to the SSL service running on localhost:30001 and waits for the server's response (such as the next Bandit password).
 - - connect -
 ```
 ssh bandit16@bandit.labs.overthewire.org -p 2220
 ```
+<img width="987" height="742" alt="image" src="https://github.com/user-attachments/assets/4ee076aa-358c-4e16-839d-a9f9413b78b8" />
+
 
   ## level-17
 - username - bandit1
@@ -653,6 +653,12 @@ Lock down the permissions so SSH accepts it:
 ```
 ssh bandit17@bandit.labs.overthewire.org -p 2220
 ```
+<img width="761" height="705" alt="image" src="https://github.com/user-attachments/assets/10d74b6f-e7db-487b-a7bf-7731fb867222" />
+
+<img width="1196" height="737" alt="image" src="https://github.com/user-attachments/assets/84ab3539-bb0e-4eda-bcb3-b6b274da912d" />
+
+<img width="687" height="347" alt="image" src="https://github.com/user-attachments/assets/ea65282f-ca8b-4d16-bc46-385730f39d27" />
+
 
   ## level-18
 - username - bandit1
@@ -668,7 +674,10 @@ ssh bandit17@bandit.labs.overthewire.org -p 2220
 ssh bandit18@bandit.labs.overthewire.org -p 2220
 ```
 
--  ##level-19
+<img width="605" height="316" alt="image" src="https://github.com/user-attachments/assets/b470c610-f63e-4781-a90e-421b7dc2b3a0" />
+
+
+  ## level-19
 - username - bandit1
 - password
    ```
@@ -682,7 +691,13 @@ ssh bandit18@bandit.labs.overthewire.org -p 2220
 ssh bandit19@bandit.labs.overthewire.org -p 2220
 ```
 
--  ##level-20
+
+<img width="842" height="722" alt="image" src="https://github.com/user-attachments/assets/c0d46ffb-2e02-45fc-9432-839938462b25" />
+
+<img width="871" height="646" alt="image" src="https://github.com/user-attachments/assets/0f486e1e-1bb2-4a9c-b3b6-a835ddd075f3" />
+
+
+ ## level-20
 - username - bandit1
 - password
    ```
@@ -706,6 +721,7 @@ ssh bandit19@bandit.labs.overthewire.org -p 2220
 ```
 ssh bandit20@bandit.labs.overthewire.org -p 2220
 ```
+<img width="597" height="167" alt="image" src="https://github.com/user-attachments/assets/e790791f-e6ca-42d0-9ba4-34a1bb3ebbbf" />
 
   ## level-21
 - username - bandit21
