@@ -751,6 +751,11 @@ ssh bandit20@bandit.labs.overthewire.org -p 2220
 
 - suconnect: The specific "SetUID" program that checks your password and gives the flag.
 
+
+
+<img width="1377" height="296" alt="image" src="https://github.com/user-attachments/assets/f2e0eb38-e65a-495c-a502-570b3abf0c3c" />
+
+
 - - connect -
 ```
 ssh bandit21@bandit.labs.overthewire.org -p 2220
@@ -776,6 +781,9 @@ ssh bandit21@bandit.labs.overthewire.org -p 2220
 - cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 - bandit21@bandit:~$ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 - "tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q"
+
+<img width="1352" height="216" alt="image" src="https://github.com/user-attachments/assets/efcbd1b0-5780-48e8-8a1e-c4d01dd67666" />
+
 
 - explain:
 - cron: A service that runs commands automatically at set times.
@@ -816,6 +824,15 @@ ssh bandit22@bandit.labs.overthewire.org -p 2220
 - "bandit22@bandit:/etc/cron.d$ cat /tmp/$mytarget"
 - 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
 
+
+<img width="1311" height="337" alt="image" src="https://github.com/user-attachments/assets/00bc1908-4e70-4564-a155-29ab89263427" />
+ ## explain:
+- cron
+- Cron is a Linux service that automatically runs commands or scripts at scheduled times (every minute, hour, day, etc.).
+- cron.d → A directory where scheduled cron jobs are stored; files inside it tell the system what commands to run and when.
+- cronjob_bandit23 → A specific cron job file that contains the schedule and command executed automatically for the bandit23 user.
+
+  
 - - connect -
 ```
 ssh bandit23@bandit.labs.overthewire.org -p 2220
@@ -845,8 +862,11 @@ ssh bandit23@bandit.labs.overthewire.org -p 2220
 - ls: cannot access 'certa6.sh': No such file or directory
 - bandit23@bandit:/var/spool/bandit24/foo$ ls
 - ls: cannot open directory '.': Permission denied
-- bandit23@bandit:/var/spool/bandit24/foo$ cat /tmp/certa_test.txt
+- bandit23@bandit:/var/spool/bandit24/foo$ cat /tmp/certa_test
 - gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+
+<img width="1356" height="762" alt="image" src="https://github.com/user-attachments/assets/4e2712da-477b-480f-9a7e-13070aa202c5" />
+
 
 - - connect -
 ```
@@ -876,6 +896,7 @@ ssh bandit24@bandit.labs.overthewire.org -p 2220
 - Correct!
 - The password of user bandit25 is iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
 
+<img width="952" height="292" alt="image" src="https://github.com/user-attachments/assets/be488d44-37d1-4bf0-8c54-d7c096f3e6f7" />
 
 
 - "!"— In shells like Bash, it’s used for history expansion (recalling previous commands).
@@ -914,9 +935,18 @@ ssh bandit25@bandit.labs.overthewire.org -p 2220
 - 🔹 6. Set permission
 - chmod 600 bandit26.sshkey
 - 🔹 7. Make terminal SMALL
-- stty rows 5 cols 40
+- stty rows 5 cols 40f
 - 🔹 8. Connect using key
 - ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
+
+- Don't type a command immediately.
+
+- For Bandit 26, the trick is:
+
+- Make your terminal window very small (reduce its height).
+- Connect again with the SSH command.
+- When the text opens in more, press:
+  
 - 🔹 9. When screen pauses → press
 - v
 - 🔹 10. Inside vi
@@ -928,8 +958,11 @@ ssh bandit25@bandit.labs.overthewire.org -p 2220
 ```
 ssh bandit26@bandit.labs.overthewire.org -p 2220
 ```
+<img width="885" height="780" alt="image" src="https://github.com/user-attachments/assets/b73adc48-3e31-4911-911f-162518135969" />
 
+<img width="687" height="166" alt="image" src="https://github.com/user-attachments/assets/ed225a4e-041d-4464-b8b2-83ee32dae8c7" />
 
+<img width="682" height="142" alt="image" src="https://github.com/user-attachments/assets/0e6f5acc-2cc2-4cfc-bacb-e914d64ce00a" />
 
   ## level-27
 - username - bandit27
