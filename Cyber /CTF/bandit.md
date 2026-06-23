@@ -1040,6 +1040,10 @@ ssh bandit27@bandit.labs.overthewire.org -p 2220
 
 - cat README
 - The text inside this file is the password for bandit28.
+
+
+<img width="882" height="732" alt="image" src="https://github.com/user-attachments/assets/dd914958-cf1b-4a09-8100-9be364ab74ff" />
+
 - - connect -
 ```
 ssh bandit28@bandit.labs.overthewire.org -p 2220
