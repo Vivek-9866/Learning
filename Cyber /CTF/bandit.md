@@ -1004,13 +1004,13 @@ ssh bandit27@bandit.labs.overthewire.org -p 2220
 ```
 
 
--  ##level-28
+  ## level-28
 - username - bandit28
 - password
    ```
    Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
    ```
-#Commands:
+# Commands:
 - Open your Kali terminal (do not log into bandit27 for this).
 
 - Go to a temporary working directory by typing:
@@ -1121,6 +1121,12 @@ ssh bandit28@bandit.labs.overthewire.org -p 2220
 - 🔹 11. Login to next level
 - ssh bandit29@bandit.labs.overthewire.org -p 2220
 
+<img width="817" height="712" alt="image" src="https://github.com/user-attachments/assets/79c987c3-4250-4aa7-b5e6-41264be1f008" />
+
+<img width="1025" height="812" alt="image" src="https://github.com/user-attachments/assets/7e1aff07-8818-4e67-b29b-46cd04ff78fe" />
+
+
+
 - Command	Meaning
 - mktemp -d	= create safe folder
 - git clone =	download repo
@@ -1177,7 +1183,15 @@ ssh bandit29@bandit.labs.overthewire.org -p 2220
 - ssh bandit30@bandit.labs.overthewire.org -p 2220
 - 👉 Login to next level using found password
 
-  
+  <img width="772" height="700" alt="image" src="https://github.com/user-attachments/assets/4b821b9d-52d3-479c-ba60-f00b1b2f6f4b" />
+
+<img width="882" height="702" alt="image" src="https://github.com/user-attachments/assets/8f31d0d9-4316-45cf-98bf-8e7bb201f459" />
+
+
+<img width="731" height="671" alt="image" src="https://github.com/user-attachments/assets/34fc4786-1c30-417f-9499-ac4eb3983ca3" />
+
+
+
 - - connect -
 ```
 ssh bandit30@bandit.labs.overthewire.org -p 2220
@@ -1227,6 +1241,10 @@ ssh bandit30@bandit.labs.overthewire.org -p 2220
 - 🔹 8.
 - git show secret
 - 👉 Show hidden content inside tag
+
+
+<img width="997" height="760" alt="image" src="https://github.com/user-attachments/assets/c58be003-a475-464b-8072-50134d49f16b" />
+
 
 - - connect -
 ```
@@ -1345,6 +1363,20 @@ ssh bandit31@bandit.labs.overthewire.org -p 2220
 
 - 👉 You finished Bandit 🎯
 
+
+<img width="906" height="736" alt="image" src="https://github.com/user-attachments/assets/3804c3d2-e025-41ec-9895-727a15091195" />
+
+
+<img width="946" height="737" alt="image" src="https://github.com/user-attachments/assets/2d2f64e8-43d7-4da6-a914-987963a9d621" />
+
+<img width="886" height="731" alt="image" src="https://github.com/user-attachments/assets/5f443570-ad49-49fa-94e1-363e09b23106" />
+
+<img width="896" height="782" alt="image" src="https://github.com/user-attachments/assets/845f4b5b-066d-4b2b-b159-d14e719cd4dc" />
+
+
+<img width="897" height="537" alt="image" src="https://github.com/user-attachments/assets/04d95718-a07b-46f2-9f99-e1315a4c8b3a" />
+
+
 - 🧠 Final Summary
 - Level 31 → push file → get password
 - Level 32 → bypass shell → get password
@@ -1356,14 +1388,10 @@ ssh bandit31@bandit.labs.overthewire.org -p 2220
 ssh bandit33@bandit.labs.overthewire.org -p 2220
 ```
 
- ## level-
-- username - bandit
-- password
-   ```
-   
-   ```
-#Commands:
+<img width="700" height="312" alt="image" src="https://github.com/user-attachments/assets/9ed33630-b671-4cf7-9682-3b8b00abb3a7" />
 
+
+<img width="751" height="195" alt="image" src="https://github.com/user-attachments/assets/b999f934-fea4-49f1-b470-cc3d448400ce" /> 
 
   
 - - connect -
